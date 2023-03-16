@@ -1,0 +1,21 @@
+sudo -S <<< Notadmin apt-get update # this will run on terminal # Notadmin is password 
+
+
+
+#bench new-site test --mariadb-root-password 0987 --admin-password test
+#yes y | bench set-nginx-port sitename 90
+#bench drop-site test --mariadb-root-password 0987
+
+
+
+
+
+sudo aptitude install mariadb-server
+
+
+
+subprocess.run(['sudo -S apt-get update'], shell=True, input="Notadmin".encode())
+
+
+
+os.system("gnome-terminal -e 'bash -c \"sudo -S <<< Notadmin apt-get update && exit; exec bash\"'")
